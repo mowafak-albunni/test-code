@@ -1,0 +1,122 @@
+img {
+    width: 120px;
+    height: 100%;
+}
+.active {
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #9b9b9b;
+}
+.dark-mode .active {
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #9b9b9b;
+}
+a:hover{
+    font-weight: 550;
+}
+#darkmode #search-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#search-input {
+    border-radius: 20px;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6); */
+}
+.form-control:focus {
+    border-color: #808080;
+    box-shadow: 0 0 0 0.3rem rgba(80, 80, 80, 0.25);
+} 
+.dark-mode #search-input {
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+}
+#darkmode{
+    border: none;
+    background-color: #F8F9FA;
+    margin-right: 5px;
+}
+#darkmode:hover{
+    background-color: #212529;
+    color: white;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+.line {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 100%;
+    border-top: 2.2px solid rgb(0, 0, 0);
+}
+.dark-mode .line{
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 100%;
+    border-top: 2.2px solid rgb(255, 255, 255);
+}
+nav{
+    padding-top: 10px;
+    margin-bottom: -10px;
+    background: white;
+    top: 0;
+}
+.dark-mode {
+    background-color: #141516;
+    top: 0px;
+}
+
+.dark-mode #darkmode{
+    border: none;
+    background-color: #141516;
+    margin-right: 5px;
+}
+.dark-mode #darkmode:hover{
+    background-color: #141516;
+    color: white;
+    border-radius: 50%;
+    padding-top: 3px;
+}
+.dark-mode-text {
+    color: white;
+}
+#search-btn {
+    color: #212529;
+    background-color: white;
+    border-color: rgb(112, 112, 112);
+    border-radius: 10px;
+}
+#search-btn:hover {
+    color: #ffffff;
+    background-color: #212529;
+    border-color: rgb(112, 112, 112);
+    border-radius: 10px;
+}
+.dark-mode .material-symbols-outlined {
+    color: white;
+}
+.dark-mode #search-btn {
+    color: #ffffff;
+    background-color: #141516;
+    border-color: rgb(112, 112, 112);
+    border-radius: 10px;
+}
+.dark-mode #search-btn:hover {
+    color: #fff;
+    background-color: rgb(112, 112, 112);
+    border-color: rgb(112, 112, 112);
+    border-radius: 10px;
+}
+.dark-mode #navbar-text{
+    color: white;
+}
+.dark-mode .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+

@@ -1,0 +1,555 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  
+
+
+<div class="">
+    <div id="" *ngFor="let kwNumber of kwValue">
+    <div *ngFor="let dateNumber of dateValues"></div>
+      
+
+
+
+
+<div  [ngClass]="{'dark-mode': isDarkMode}">
+
+    <table>
+        <tr>
+            <th>KW</th>
+            <th>MO</th>
+            <th>DI</th>
+            <th>MI</th>
+            <th>DO</th>
+            <th>FR</th>
+            <th>SA</th>
+            <th>SO</th>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(1)}">01</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.01')}">02.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.01')}">03.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.01')}">04.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.01')}">05.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.01')}">06.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.01')}">07.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.01')}">08.01.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(2)}">02</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.01')}">09.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.01')}">10.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.01')}">11.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.01')}">12.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.01')}">13.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.01')}">14.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.01')}">15.01.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(3)}">03</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.01')}">16.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.01')}">17.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.01')}">18.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.01')}">19.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.01')}">20.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.01')}">21.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.01')}">22.01.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(4)}">04</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.01')}">23.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.01')}">24.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.01')}">25.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.01')}">26.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.01')}">27.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.01')}">28.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.01')}">29.01.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(5)}">05</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.01')}">30.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('31.01')}">31.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.02')}">01.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.02')}">02.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.02')}">03.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.02')}">04.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.02')}">05.02.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(6)}">06</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.02')}">06.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.02')}">07.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.02')}">08.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.02')}">09.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.02')}">10.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.02')}">11.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.02')}">12.02.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(7)}">07</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.02')}">13.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.02')}">14.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.02')}">15.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.02')}">16.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.02')}">17.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.02')}">18.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.02')}">19.02.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(8)}">08</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.02')}">20.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.02')}">21.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.02')}">22.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.02')}">23.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.02')}">24.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.02')}">25.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.02')}">26.02.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(9)}">09</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.02')}">27.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.02')}">28.02.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.03')}">01.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.03')}">02.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.03')}">03.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.03')}">04.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.03')}">05.03.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(10)}">10</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.03')}">06.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.03')}">07.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.03')}">08.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.03')}">09.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.03')}">10.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.03')}">11.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.03')}">12.03.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(11)}">11</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.03')}">13.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.03')}">14.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.03')}">15.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.03')}">16.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.03')}">17.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.03')}">18.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.03')}">19.03.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(12)}">12</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.03')}">20.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.03')}">21.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.03')}">22.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.03')}">23.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.03')}">24.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.03')}">25.03.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.03')}">26.03.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(13)}">13</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.04')}">27.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.04')}">28.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.04')}">29.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.04')}">30.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('31.04')}">31.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.04')}">01.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.04')}">02.04.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(14)}">14</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.04')}">03.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.04')}">04.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.04')}">05.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.04')}">06.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.04')}">07.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.04')}">08.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.04')}">09.04.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(15)}">15</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.04')}">10.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.04')}">11.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.04')}">12.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.04')}">13.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.04')}">14.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.04')}">15.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.04')}">16.04.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(16)}">16</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.04')}">17.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.04')}">18.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.04')}">19.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.04')}">20.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.04')}">21.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.04')}">22.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.04')}">23.04.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(17)}">17</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.04')}">24.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.04')}">25.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.04')}">26.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.04')}">27.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.04')}">28.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.04')}">29.04.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.04')}">30.04.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(18)}">18</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.05')}">01.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.05')}">02.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.05')}">03.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.05')}">04.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.05')}">05.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.05')}">06.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.05')}">07.05.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(19)}">19</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.05')}">08.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.05')}">09.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.05')}">10.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.05')}">11.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.05')}">12.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.05')}">13.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.05')}">14.05.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(20)}">20</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.05')}">15.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.05')}">16.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.05')}">17.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.05')}">18.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.05')}">19.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.05')}">20.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.05')}">21.05.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(21)}">21</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.05')}">22.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.05')}">23.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.05')}">24.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.05')}">25.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.05')}">26.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.05')}">27.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.05')}">28.05.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(22)}">22</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.05')}">29.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.05')}">30.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('31.05')}">31.05.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.06')}">01.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.06')}">02.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.06')}">03.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.06')}">04.06.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(23)}">23</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.06')}">05.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.06')}">06.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.06')}">07.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.06')}">08.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.06')}">09.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.06')}">10.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.06')}">11.06.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(24)}">24</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.06')}">12.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.06')}">13.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.06')}">14.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.06')}">15.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.06')}">16.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.06')}">17.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.06')}">18.06.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(25)}">25</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.06')}">19.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.06')}">20.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.06')}">21.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.06')}">22.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.06')}">23.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.06')}">24.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.06')}">25.06.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(26)}">26</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.06')}">26.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.06')}">27.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.06')}">28.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.06')}">29.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.06')}">30.06.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.07')}">01.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.07')}">02.07.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(27)}">27</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.07')}">03.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.07')}">04.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.07')}">05.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.07')}">06.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.07')}">07.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.07')}">08.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.07')}">09.07.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(28)}">28</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.07')}">10.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.07')}">11.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.07')}">12.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.07')}">13.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.07')}">14.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.07')}">15.07.</td>
+            <td class="calendar-cell">16.07</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(29)}">29</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.07')}">17.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.07')}">18.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.07')}">19.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.07')}">20.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.07')}">21.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.07')}">22.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.07')}">23.07.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(30)}">30</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.07')}">24.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.07')}">25.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.07')}">26.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.07')}">27.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.07')}">28.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.07')}">29.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.07')}">30.07.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(31)}">31</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('31.07')}">31.07.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.08')}">01.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.08')}">02.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.08')}">03.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.08')}">04.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.08')}">05.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.08')}">06.08.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(32)}">32</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.08')}">07.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.08')}">08.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.08')}">09.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.08')}">10.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.08')}">11.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.08')}">12.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.08')}">13.08.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(33)}">33</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.08')}">14.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.08')}">15.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.08')}">16.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.08')}">17.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.08')}">18.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.08')}">19.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.08')}">20.08.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(34)}">34</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.08')}">21.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.08')}">22.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.08')}">23.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.08')}">24.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.08')}">25.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.08')}">26.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.08')}">27.08.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(35)}">35</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.08')}">28.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.08')}">29.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.08')}">30.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('31.08')}">31.08.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.09')}">01.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.09')}">02.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.09')}">03.09.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(36)}">36</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.09')}">04.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.09')}">05.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.09')}">06.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.09')}">07.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.09')}">08.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.09')}">09.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.09')}">10.09.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(37)}">37</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.09')}">11.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.09')}">12.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.09')}">13.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.09')}">14.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.09')}">15.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.09')}">16.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.09')}">17.09.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(38)}">38</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.09')}">18.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.09')}">19.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.09')}">20.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.09')}">21.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.09')}">22.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.09')}">23.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.09')}">24.09.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(39)}">39</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.09')}">25.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.09')}">26.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.09')}">27.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.09')}">28.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.09')}">29.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.09')}">30.09.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.10')}">01.10.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(40)}">40</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.10')}">02.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.10')}">03.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.10')}">04.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.10')}">05.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.10')}">06.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.10')}">07.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.10')}">08.10.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(41)}">41</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.10')}">09.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.10')}">10.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.10')}">11.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.10')}">12.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.10')}">13.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.10')}">14.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.10')}">15.10.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(42)}">42</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.10')}">16.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.10')}">17.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.10')}">18.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.10')}">19.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.10')}">20.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.10')}">21.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.10')}">22.10.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(43)}">43</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.10')}">23.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.10')}">24.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.10')}">25.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.10')}">26.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.10')}">27.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.10')}">28.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.10')}">29.10.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(44)}">44</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.01')}">30.01.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('31.10')}">31.10.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.11')}">01.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.11')}">02.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.11')}">03.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.11')}">04.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.11')}">05.11.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(45)}">45</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.11')}">06.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.11')}">07.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.11')}">08.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.11')}">09.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.11')}">10.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.11')}">11.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.11')}">12.11.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(46)}">46</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.11')}">13.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.11')}">14.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.11')}">15.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.11')}">16.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.11')}">17.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.11')}">18.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.11')}">19.11.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(47)}">47</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.11')}">20.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.11')}">21.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.11')}">22.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.11')}">23.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.11')}">24.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.11')}">25.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.11')}">26.11.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(48)}">48</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.11')}">27.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.11')}">28.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.11')}">29.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.11')}">30.11.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('01.12')}">01.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('02.12')}">02.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('03.12')}">03.12.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(49)}">49</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('04.12')}">04.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('05.12')}">05.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('06.12')}">06.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('07.12')}">07.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('08.12')}">08.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('09.12')}">09.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('10.12')}">10.12.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(50)}">50</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('11.12')}">11.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('12.12')}">12.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('13.12')}">13.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('14.12')}">14.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('15.12')}">15.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('16.12')}">16.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('17.12')}">17.12.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(51)}">51</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('18.12')}">18.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('19.12')}">19.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('20.12')}">20.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('21.12')}">21.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('22.12')}">22.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('23.12')}">23.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('24.12')}">24.12.</td>
+        </tr>
+        <tr>
+            <td class="calendar-cell" [ngClass]="{'green-button': isKwUsed(52)}">52</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('25.12')}">25.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('26.12')}">26.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('27.12')}">27.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('28.12')}">28.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('29.12')}">29.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('30.12')}">30.12.</td>
+            <td class="calendar-cell" [ngClass]="{'green-button': isDateUsed('31.12')}">31.12.</td>
+        </tr>
+    </table>
+</div>
+
+
+
+</div>
+</div>
+
+<p id="last-line"></p>

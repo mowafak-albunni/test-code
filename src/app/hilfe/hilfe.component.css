@@ -1,0 +1,24 @@
+.contact-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.contact-info {
+    font-size: 18px;
+}
+.contact-info p {
+    margin: 0;
+}
+.contact-info a {
+    text-decoration: none;
+    color: #007BFF;
+}
+.dark-mode div {
+    background-color: #212529;
+    color: white;
+}
+

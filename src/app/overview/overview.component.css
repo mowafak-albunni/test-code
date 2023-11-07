@@ -1,0 +1,101 @@
+#edit-btn{
+    background-color: green; 
+    color: white; 
+    margin-top: 20px; 
+    border: none;
+    margin-right: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+
+}
+#delete-btn{
+    background-color: red; 
+    color: white; 
+    margin-top: 20px; 
+    border: none;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+div :hover{
+    background-color: #212529;
+    color: aliceblue;
+    transition: 0.5s;
+} 
+#delete-btn:hover{
+    background-color: darkred;
+}
+#edit-btn:hover{
+    background-color: darkgreen;
+}
+#delete-btn :hover{
+    background-color: darkred;
+}
+#edit-btn :hover{
+    background-color: darkgreen;
+}
+.dark-mode a{
+    color: white;
+    background-color: #212529;
+}
+.dark-mode a:hover{
+    color: #ffffff;
+    background-color: rgb(119, 119, 119);
+}
+.dark-mode div:hover{
+    background-color: rgb(119, 119, 119);
+}
+.dark-mode h5:hover{
+    background-color: rgb(119, 119, 119);
+}
+.dark-mode small:hover{
+    background-color: rgb(119, 119, 119);
+}
+.dark-mode a {
+    border-color: #818181;
+}
+#sort{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-width: 2px #212529;
+    padding: 5px;
+    margin-right: 5px;
+}
+#sort:hover{
+    background-color: #212529;
+    color: aliceblue;
+    transition: 0.0s;
+    border: none;
+    padding: 7px;
+}
+.dark-mode #sort{
+    background-color: #212529;
+    border: solid;
+    border-color: #818181;
+    color: white;
+}
+.dark-mode #sort:hover{
+    background-color: #818181;
+    border: none;
+    padding: 8px;
+
+}
+#information{
+    color: white;
+    background-color: gray;
+    margin-top: 20px; 
+    border: none;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+#information:hover{
+    background-color: rgb(80, 80, 80);
+ 
+}
+#information :hover{
+    background-color: rgb(80, 80, 80);
+ 
+}
+

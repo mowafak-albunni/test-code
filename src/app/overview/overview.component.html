@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- Titel -->
+<div class="h-100 p-5 bg-dark text-white border rounded-3 text-center mb-1">
+  <div class="display-4">
+      ÜBERSICHT
+  </div>
+</div>
+<hr>
+
+
+
+<!-- sortieren -->
+<div [ngClass]="{'dark-mode': isDarkMode}">
+  <button (click)="sortID()" id="sort">Personal Nr. ↓</button>
+  <button (click)="sortVorname()" id="sort" class="mb-3">Vorname ↓</button>
+  <button (click)="sortNachname()" id="sort">Nachname ↓</button>
+  <button (click)="sortDate()" id="sort">Datum ↓</button>
+  <button (click)="sortKW()" id="sort">KW ↓</button>
+</div>
+
+
+<!-- Ansicht -->
+<div id="cards" class="list-group" *ngFor="let arbeitszeit of arbeitszeiten" [ngClass]="{'dark-mode': isDarkMode}">
+    <a class="mb-2 list-group-item list-group-item-action" aria-current="true">
+      
+      <!-- personalNr. & Vorname & Nachname -->
+      <div id="name" class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1" >{{arbeitszeit.personalNr}} | {{arbeitszeit.vorname}} {{arbeitszeit.nachname}}</h5>
+      </div>
+
+      <!-- insgesamt -->
+      <small>Insgesamt: {{arbeitszeit.insgesamt}}</small><br>
+
+      <!-- KW und Datum -->
+      <small>KW: {{arbeitszeit.kalenderWoche}} - {{arbeitszeit.datum | date: "dd.MM.yyyy"}}</small><br>
+
+      <!-- Bearbeiten -->
+      <button routerLink="/bearbeiten/{{arbeitszeit.personalNr}}" id="edit-btn"><span class="material-symbols-outlined">edit</span></button>
+
+      <!-- löschen -->
+      <!-- <button id="delete-btn" (click)="test(arbeitszeit)"><span class="material-symbols-outlined">delete</span></button> -->
+      <button (click)="deleteAZ(arbeitszeit)"  id="delete-btn"><span class="material-symbols-outlined">delete</span></button>
+
+      <!-- info -->
+      <!-- <a id="information" href="/information/{{arbeitszeit.personalNr}}" onclick="window.open(this.href, 'targetWindow', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=1000,height=800'); return false;"><span class="material-symbols-outlined">info</span></a> -->
+      <button routerLink="/information/{{arbeitszeit.personalNr}}" id="information"><span class="material-symbols-outlined">info</span></button>
+
+    </a>
+</div>
+
+
+
+
+
+

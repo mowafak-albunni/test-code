@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+}
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+.dark-mode {
+    color: rgb(228, 228, 228);
+    border-color: rgb(255, 255, 255);
+}
+.dark-mode th, .dark-mode td {
+    border: 1px solid rgb(153, 153, 153);
+}
+th{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+    background-color: rgb(138, 138, 138);
+}
+.dark-mode th{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+    background-color: rgb(138, 138, 138);
+    color: white;
+}
+button{
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    /* background-color: gray; */
+    position: absolute;
+}
+.green-button {
+    background-color: green;
+    color: white; /* optional, um den Text im Button weiß zu machen */
+    /* Fügen Sie andere gewünschte Stile hinzu */
+}
+#last-line{
+    margin: 40px;
+}
+

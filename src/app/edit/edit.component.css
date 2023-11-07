@@ -1,0 +1,37 @@
+.dark-mode #form-body{
+    background-color: #212529;
+    color: white;
+    border-color: gray;
+}
+button{
+    background-color: white;
+    color: #212529;
+    border-color: #212529;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #212529;
+    color: white;
+}
+.dark-mode button{
+    background-color: #141516;
+    color: rgb(255, 255, 255);
+    border-color: #fff;
+}
+.dark-mode #form-lines{
+    border-color: gray;
+}
+.dark-mode button:hover{
+    background-color: rgb(112, 112, 112);
+    color: white;
+    border-color: #212529;
+}
+/* .dark-mode button{
+    background-color: white;
+    color: #212529;
+} */
+.dark-mode .form-control{
+    background-color: rgb(81, 81, 81);
+    color: white;
+}
+

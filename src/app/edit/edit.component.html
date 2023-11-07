@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<div class="h-100 p-5 bg-dark text-white border rounded-3 text-center mb-1">
+    <div class="display-4">
+        BEARBEITEN
+    </div>
+  </div>
+  <hr>
+
+
+
+<form [ngClass]="{'dark-mode': isDarkMode}">
+    <div id="form-body" class="card">
+
+        <div id="form-lines" class="card-header">
+            <h5>Arbeitszeit bearbeiten</h5>
+        </div>
+
+        <div class="card-body">
+            <form>
+            
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <!--Personal NR-->
+                        <label class="form-label">Personal Nr.</label>
+                        <input [(ngModel)]="arbeitszeit.personalNr" name="PersonalNr" type="number" class="form-control">
+                    </div>
+
+                    <div class="col-4">
+                        <!-- kalenderWoche -->
+                        <label class="form-label">kalenderwoche</label>
+                        <input [(ngModel)]="arbeitszeit.kalenderWoche" name="kalenderWoche" type="number" class="form-control">
+                    </div>
+                </div>
+
+
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <!--FirstName-->
+                        <label class="form-label">Vorname</label>
+                        <input [(ngModel)]="arbeitszeit.vorname" name="vorname" type="text" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <!--LastName-->
+                        <label class="form-label">Nachname</label>
+                        <input [(ngModel)]="arbeitszeit.nachname" name="nachname" type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <!--Date-->
+                        <label class="form-label">Datum</label>
+                        <!-- <input [value]="arbeitszeit.datum | date:'yyyy-MM-dd'" name="datum" type="date" class="form-control" > -->
+                        <input [(ngModel)]="arbeitszeit.datum" name="datum" type="date" class="form-control" >
+
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-2">
+                        <!--Start-->
+                        <label class="form-label">Anfang</label>
+                        <input [(ngModel)]="arbeitszeit.startZeit" (change)="calculateTime()" name="startZeit" type="time" class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <!--End-->
+                        <label class="form-label">Ende</label>
+                        <input [(ngModel)]="arbeitszeit.endZeit" (change)="calculateTime()" name="endZeit" type="time" class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <!--Break-->
+                        <label class="form-label">Pause</label>
+                        <input [(ngModel)]="arbeitszeit.pauseZeit" (change)="calculateTime()" name="pauseZeit" type="time" class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <!--Insgesamt-->
+                        <label class="form-label">Insgesamt</label>
+                        <input [value]="arbeitszeit.insgesamt" name="InsgesamtZeit" type="" class="form-control" readonly>
+                    </div>
+                </div>
+                <!-- Notiz -->
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <label class="form-label">Notiz</label>
+                        <input [(ngModel)]="arbeitszeit.notiz" name="notiz" type="text" class="form-control" >
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Ändern Knopf -->
+        <div id="form-lines" class="card-footer">
+            <button (click)="save()" class="btn btn-outline-secondary">Ändern</button>
+        </div>
+
+    </div>
+</form>

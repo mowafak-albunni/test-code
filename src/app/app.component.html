@@ -1,0 +1,52 @@
+
+
+
+    
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar" [ngClass]="{'dark-mode': isDarkMode}">
+    <div class="container-fluid">
+      <h2 class="navbar-brand" id="navbar-text">KEM-Homeoffice</h2>
+      <!-- <img src="https://kemmlit.ie/wp-content/uploads/2022/11/KEMMLIT-Logo-1.png" alt=""> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/overview" routerLinkActive="active" id="navbar-text" [ngClass]="{'dark-mode': isDarkMode}">Übersicht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/erstellen" routerLinkActive="active" id="navbar-text" [ngClass]="{'dark-mode': isDarkMode}">Erstellen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/kalenderwochen" routerLinkActive="active" id="navbar-text" [ngClass]="{'dark-mode': isDarkMode}">KW Tabelle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/help" routerLinkActive="active" id="navbar-text" [ngClass]="{'dark-mode': isDarkMode}">Hilfe</a>
+          </li>
+        </ul>
+       
+        
+        <button (click)="toggleDarkMode()" id="darkmode">
+          <span class="material-symbols-outlined" [class.dark-mode]="isDarkMode">dark_mode</span>
+          
+        </button>
+
+        
+        <form class="d-flex">          
+          <input class="form-control me-2" type="search" placeholder="Suche..." aria-label="Search" id="search-input">
+          <button class="btn btn-outline-secondary" type="submit" id="search-btn" [ngClass]="{'search-btn-dark-mode': isDarkMode}">Suchen</button>
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+  <div [ngClass]="{'dark-mode': isDarkMode}">
+    <span class='line'></span>
+  </div>  
+
+
+<div class="container pt-5">
+  <router-outlet></router-outlet>
+</div>
+
+
